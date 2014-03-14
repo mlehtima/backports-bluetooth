@@ -11,6 +11,7 @@ obj-$(CPTCFG_BT_HCIDTL1)	+= dtl1_cs.o
 obj-$(CPTCFG_BT_HCIBT3C)	+= bt3c_cs.o
 obj-$(CPTCFG_BT_HCIBLUECARD)	+= bluecard_cs.o
 obj-$(CPTCFG_BT_HCIBTUART)	+= btuart_cs.o
+obj-m				+= hci_smd.o
 
 obj-$(CPTCFG_BT_HCIBTUSB)	+= btusb.o
 obj-$(CPTCFG_BT_HCIBTSDIO)	+= btsdio.o

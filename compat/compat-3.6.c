@@ -12,16 +12,3 @@
 #include <linux/export.h>
 #include <linux/clk.h>
 
-/* whoopsie ! */
-#ifndef CONFIG_COMMON_CLK
-int clk_enable(struct clk *clk)
-{
-	return 0;
-}
-EXPORT_SYMBOL_GPL(clk_enable);
-
-void clk_disable(struct clk *clk)
-{
-}
-EXPORT_SYMBOL_GPL(clk_disable);
-#endif

@@ -5544,6 +5544,10 @@ static void read_local_oob_ext_data_complete(struct hci_dev *hdev, u8 status,
 		if (skb->len != sizeof(*rp)) {
 			status = MGMT_STATUS_FAILED;
 			eir_len = 0;
+			h192 = NULL;
+			r192 = NULL;
+			h256 = NULL;
+			r256 = NULL;
 		} else {
 			status = MGMT_STATUS_SUCCESS;
 			rp = (void *)skb->data;
@@ -5560,6 +5564,10 @@ static void read_local_oob_ext_data_complete(struct hci_dev *hdev, u8 status,
 		if (skb->len != sizeof(*rp)) {
 			status = MGMT_STATUS_FAILED;
 			eir_len = 0;
+			h192 = NULL;
+			r192 = NULL;
+			h256 = NULL;
+			r256 = NULL;
 		} else {
 			status = MGMT_STATUS_SUCCESS;
 			rp = (void *)skb->data;
